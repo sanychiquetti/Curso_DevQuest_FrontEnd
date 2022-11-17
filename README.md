@@ -1,2 +1,9 @@
-# Curso_DevQuest_FrontEnd
-Meu curso na DevQuest de FrontEnd
+Meus aprendizados de frontend no curso do DevQuest
+
+Aqui estarei compartilhando meus projetos e exercícios.🗽
+
+## Tecnologias utilizadas:
+
+- HTML
+- CSS
+- JS
