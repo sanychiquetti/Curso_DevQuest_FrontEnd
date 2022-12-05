@@ -1,0 +1,11 @@
+/* o fonte-face é para acessar a nova fonte */
+@font-face {
+    font-family: Milky;
+    src: url('./fonts/MilkyNice.otf'),
+    url('./fonts/MilkyNice.ttf')
+}
+/* aqui podemos escolher mais de uma fonte, assim se ele não achar uma fonte ele já carrega a outra opção. */
+h1 {
+    font-family: Milky, Helvetica, sans-serif;
+    font-weight: 100;
+}
