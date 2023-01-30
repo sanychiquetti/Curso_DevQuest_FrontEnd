@@ -1,0 +1,31 @@
+/*estilizar o elemento pai, que está emglobando todos os outros*/
+.flex{
+    display: flex;
+    width: 960px;
+    max-width: 100%; /*aqui deixamos responsivo*/
+    flex-wrap: wrap; /*para que no elemento possamos definir onde quereemos a quebra na estilização da div*/
+}
+
+/*Parra responsividade tb: Deixar as imagens com 100% de largura da coluna que elas estarão dentro, mesmo assim ela ainda não fica todas na mesma medida, pois nem todas tem o mesmo conteúdo */
+.flex img{
+    max-width: 100%;
+}
+.coluna{
+    display: flex; /*aqui como estamos definindo uma display flex no filho tb (em cada coluna nesse caso), todos os elementos dentro dela, passam a ser flex itens, e por padrão, os flex itens são row por padrão, então vão ficar em linha*/
+    flex-direction: column; /*aqui resolemos a questão do row, tornando coluna novamente */
+    background-color: cadetblue; /*com a cor conseguimos ver o container todo*/
+    /*flex: 1; aqui conseguimos deixar todos na mesma medida, mesmo contendo conteúdos diferentes, mas com o wrap, precisamo tirar essa propriedade*/
+    margin: .5em; /*aqui deixamos os elementos com espaço entre eles*/
+    /*width: 250px; colocamos uma largura de cada coluna, sem o flex:1, ele vai respeitar essa medida para fazer o wrap(quebra), mas com o flex basis, não precisamos dessa propriedade*/
+    flex: 0 1 250px; /*onde as duas primeiras são o row, stretch e o basis, colocando o valor nela, não precisamos do width*/
+}
+
+/*aqui vamos estilizar o botão, para ficarem todos na mesma posição em cada container*/
+.botao{
+    align-self: flex-start; /*aqui colocamos para que ele sempre comece á esquerda da coluna */
+    margin-top: auto; /*vai fazer ele ficar no final da coluna, baseado no conteúdo da coluna */
+}
+
+/*para conseguir quebrar a linha, e definir uma quandidade para que ele quebre, usamos o wrap, por isso no pai colocamos o flex-wrap: wrap, e retiramos o flex:1 da coluna  */
+
+

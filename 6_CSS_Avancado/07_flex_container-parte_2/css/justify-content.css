@@ -1,0 +1,26 @@
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+/*espaço entre eles*/
+.space-between{
+    justify-content: space-between;
+}
+
+/* espaço entre eles e antes e após eles*/
+.space-around{
+    justify-content: space-around;
+}
+
+/* espaço igual entre eles e antes e após eles*/
+.space-evenly{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,45 @@
+p {
+    color: coral;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bg {
+    background-color: lightblue;
+    background-image: url('./images/cat.jpeg');
+}
+
+.bg-image {
+    width: 513px;
+    height: 340px;
+}
+
+.bg-repeat {
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+.bg-size-cover {
+    background-size: cover;
+    height: 540px;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+    height: 540px;
+}
+
+/* .bg-position {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 540px;
+} */
+
+/* forma encurtada do mesmo codigo, a mais correta */
+.bg-position {
+
+    height: 540px;
+    background: gray url('./images/cat.jpeg')
+     no-repeat right top;
+}
+

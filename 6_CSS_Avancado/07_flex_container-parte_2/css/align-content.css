@@ -1,0 +1,49 @@
+/* aqui estamos dando uma medida para eles */
+.container{
+    height: 130px;
+    flex-wrap: wrap;
+}
+
+/* essas configurações abaixo veremos mais para frente como funcionam */
+.flex-start .item,
+.flex-end .item,
+.center .item,
+.stretch .item
+{
+    flex: 1;
+}
+
+/* alinhando ao topo no eixo transversal */
+.flex-start{
+    align-content: flex-start;
+}
+
+/* alinhar no rodapé ao eixo transversal */
+.flex-end{
+    align-content: flex-end;
+}
+
+/* alinhar no centro ao eixo transversal */
+.center{
+    align-content: center;
+}
+
+/* preencher o espaço todo */
+.stretch{
+    align-content: stretch;
+}
+
+/* aqui ele vai dispor os itens uniformemente, a primeira linha no início do container e as linhas que quebrou no final do container */
+.space-between{
+    align-content: space-between;
+}
+
+/*aqui ele vai alinhar ao centro, dando espaço no topo e no rodapé*/
+.space-around{
+    align-content: space-around;
+}
+
+/*aqui ele vai alinhar ao centro, dando espaço no topo e no rodapé e centro de forma igual em cada linha*/
+.space-evenly{
+    align-content: space-evenly;
+}

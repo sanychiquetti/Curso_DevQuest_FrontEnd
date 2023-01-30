@@ -1,0 +1,37 @@
+/* aqui vamos resetar as margins e bordas dos elementos ul */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* vamos remover os estilos pradrão e fazer nossos esilos
+ul {
+    list-style-type: circle;
+} 
+aqui podemos colocar imagem no lugar 
+ul {
+    list-style-image: url(./icone/coracao.png);
+} 
+ se quiser dar segurança para carregar algum estilo se a imagem nao carregar::after
+ul {
+    list-style: square url(./icone/coracao.png);*/
+
+/* outra forma seria dizer que nossos budts vão estar dentro das li om o inside*/
+
+ul {
+    background-color: yellow;
+    list-style: square inside url(./icone/coracao.png);
+}
+ul li {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+ol {
+    background-color: rgb(152, 152, 147);
+    list-style-type: decimal-leading-zero;
+}
+ol li {
+    border: 1px solid black;
+    padding: 5px;
+}

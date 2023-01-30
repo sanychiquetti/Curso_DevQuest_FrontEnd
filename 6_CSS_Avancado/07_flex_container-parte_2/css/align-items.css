@@ -1,0 +1,36 @@
+.container {
+    height: 130px;
+}
+
+/* aqui ele vai ficar no topo da nossa div pai*/
+.flex-start{
+    align-items: flex-start;
+}
+
+/* aqui ele vai ficar alinhado no rodapé da div pai*/
+.flex-end{
+    align-items: flex-end;
+}
+
+/* aqui ele vai ficar alinhado no centro da div pai*/
+.center{
+    align-items: center;
+}
+
+/* aqui ele vai ficar todo preenchido na div pai*/
+.stretch{
+    align-items: stretch;
+}
+
+/* fica centralizado na linha conforme o tamanho de cada*/
+.baseline{
+    align-items: baseline;
+}
+
+.baseline .item{
+    flex: 1;
+}
+/*Altera a altura apenas do item 1 */
+.baseline .item:first-child{
+    padding-top: 20px;
+}

@@ -1,0 +1,20 @@
+/* Aqui vou estilizar todas as img, com uma medida, igual pra todas  */
+img{
+    width: 150px;
+    padding: 30px;
+}
+
+/*Aqui vamos mudar a escala, se desejar alterar apenas a altura ou apenas a largura, aí temos que especificar antes, scaleX() ou scaley()*/
+img.scale {
+    transform: scale(2, 1.5); /*estou dizendo aqui que ele vai aumentar 2 vezes no eixo x e 1.5 vezes no y; */ 
+}
+
+/*Aqui vamos rotacionar o elemento*/
+img.rotate{
+    transform: rotate(45deg);
+} 
+
+/*Aqui vamos translacionar (movimentar)o elemento na tela*/
+img.translate{
+    transform: translate(30px, 30px);
+}

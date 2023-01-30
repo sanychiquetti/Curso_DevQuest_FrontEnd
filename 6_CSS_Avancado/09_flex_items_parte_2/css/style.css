@@ -1,0 +1,54 @@
+.flex-0{
+    /*o flex abrevia 3 outras propriedades: flex-grow (por padrão ele é 0), flex-shrink (por padrão ele é 1), flex-basis (por padrão ele é 0), é como se fosse um atalho do exemplo abaixo
+    flex{
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 0;
+    } que podemos abreviar:*/
+    flex: 0;
+}
+
+/* O flex 0 é basicamente para evitar que todos os elementos filhos ocupem o tamanho do elemento pai
+o flex 1 é exatamento o contrário, é para que os elementos filhos ocupem todo o tamanho do elemeto pai*/
+.flex-1{
+    /* aqui vou definir um novo valor para o grow colocando ou apenas 1 valor ou 3 valores, correspondentes ao grow, shrink e basis*/
+    flex: 1 1 100px;
+}
+
+/* aqui coloco responsivo, onde o wrap quebra os elementos se não tiver espaço, em tela menores...*/
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* O order vai dar ordem de cada elemento filho, por padrão ele vai de cima para baixo, podemos mudar isso (vide o global.css)*/
+
+/* vou estilizar o item 3, para que ele vá para a última posição, se queser que ele fique na direita, coloco -1*/
+.order .item3{
+    order: 1;
+}
+
+/*O Align Self serve para estilizarmos o posicionamento específico de um elemento no container */
+/* Aqui vou estilizar o item 5 do align-self, não vai ter diferença, pois o auto é padrão*/
+.align-self .item5{
+    align-self: auto;
+}
+
+/* Abaixo vou estilizar apenas o item 3 do align-self na class start, onde com o flex-start, ele vai pegar o item 3 e posicionar no começo do elemento*/
+.align-self.start .item3{
+    align-self: flex-start;
+}
+
+/* Abaixo vou estilizar apenas o item 1 do align-self na class end, onde com o flex-end, ele vai pegar o item 1 e posicionar no final do elemento*/
+.align-self.end .item1{
+    align-self: flex-end;
+}
+
+/* Abaixo vou estilizar apenas o item 3 do align-self na class center, onde com o flex-center, ele vai pegar o item 1 e posicionar no centro do elemento*/
+.align-self.center .item3{
+    align-self: center;
+}
+
+/* Abaixo vou estilizar apenas o item 1 do align-self na class end, onde com o flex-end, ele vai pegar o item 1 e ele vai esticar o elemento até que ocupe todo o espaço do container*/
+.align-self.stretch .item1{
+    align-self: stretch;
+}

@@ -1,0 +1,41 @@
+/*Para criar um menu (header)responsivo*/
+.header{
+    display: flex; 
+    padding: 30px; /* para desgrudar da tela*/
+    justify-content: space-between; /* aqui vamos separar os elemento, pois estão grudados, ele é propriedade do flex container (classe que contem todos os elementos filhos), por isso estilizar aqui */
+    align-items: center; /*aqui vamos  para alinhar verticalmente*/
+    flex-wrap: wrap; /*para que ele quebre qdo não couber na tela*/
+}
+
+.menu{
+    display: flex; /* aqui conseguimos colocar o menu um ao lado do outro, pois ele é row(linha)*/
+}
+
+.menu li{
+    margin-left: 15px; /*assim conseguimos pegar os itens da lista e dar espaço entre eles*/
+}
+
+/*para deixar responsivo, quando chegar até 425px, quero que o logo fique centralizado, e o menu 1 embaixo do outro*/
+@media(max-width: 425px){
+    .logo{
+        display: block; /*precisamos que volte a seer display block*/
+        width: 100%; /*para ele ocupar toda a largura da tela*/
+        text-align: center;
+    }
+    nav{
+        width: 100%; /*para que ocupe 100% da tela*/
+        text-align: center; /* para ficar centralizado*/
+    }
+    .menu{
+        display: block; /*presisamos que tb fique display block*/
+        margin-top: 30px; /*para descolar do logo*/        
+    }
+    .menu li{
+        margin-left: 0; /*porque agora ele não precisa mais da margin, pois está um embaixo do outro*/
+    }
+    .menu a{
+        padding: 15px; /*para que eles tenham uma distância entre eles, na altura*/
+        display: block; /*para que o comando acima funcione*/
+    }
+}
+

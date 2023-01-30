@@ -1,0 +1,58 @@
+/*------ Estilos Gerais -------*/
+body {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white; /* aqui estamos colocando todo o texto em branco*/
+}
+
+.container {
+    background-color: lightblue;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.2em;
+}
+
+.texto-centralizado-1 {
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
+
+    text-align: center;
+    line-height:250px; /*aqui centralizamos na altura, devemos colocar com a mesma altura da div*/
+}
+
+/* aqui vamos usar uma forma mais responsiva, o position absolut com valores em %., e o transforme */
+.texto-centralizado-2 {
+ position: absolute;
+ top: 50%;/*referenteaoeixoY,eaposiçãoemrelaçãoaopia*/
+ left: 50%;/*referenteaoeixoX,eaposiçãoemrelaçãoaopai*/
+ transform: translateX(-50%, -50);/*esseéreferenteaoconteúdo,oelementoqueestádentro*/
+                /*  eixo x, y */
+}
+
+.alinhado-margin-auto {
+    margin: auto; /* dar margem automaticamente, mas não consegue, por isso precisa do display block */
+    display: block;
+}
+
+.alinhado-absolute {
+    position: absolute;
+    margin: auto; /* perceba que só colocando assim ele não altera, temos que colocar a mão os abaixo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container-text-align {
+    text-align: center; /* aqui ela funciona, pois a classe está na div pai */
+
+}

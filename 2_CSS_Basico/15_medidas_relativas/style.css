@@ -1,0 +1,51 @@
+html {
+    background-color: #ccc;
+}
+
+/* 1 em = 16 pixels */
+
+body {
+    background-color: blueviolet;
+    width: 50%;
+    font-size: 2em;
+}
+
+.pai {
+    background-color: #ea80eafc;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.filha {
+    background-color: #1de9b6;
+    width: 75%;
+    border: solid 1px;
+    font-size: 0.85em;
+}
+
+/* usando o rem onde ele pega o valor da raiz 
+que é o html para calcular os demais:
+
+html {
+    background-color: #ccc;
+    font-size: 32px;
+}
+
+body {
+    background-color: blueviolet;
+    width: 50%;
+    font-size: 3rem;
+}
+
+.pai {
+    background-color: #ea80eafc;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.filha {
+    background-color: #1de9b6;
+    width: 75%;
+    border: solid 1px;
+    font-size: .5rem;
+} */

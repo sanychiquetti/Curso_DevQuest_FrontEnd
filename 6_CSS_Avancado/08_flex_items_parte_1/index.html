@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items - Grow - Basis - Shrink</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Flex Items - Grow - Basis - Shrink</h1>
+
+    <section>
+        <h2>Grow</h2>
+
+        <h3>Flex Grow</h3>
+        <!-- aqui vemos como ficam com a mesma medida se todos os elementos tiverem os mesmos pesos. -->
+        <div class="container">
+            <div class="item grow-1">1</div>
+            <div class="item grow-1">2</div>
+            <div class="item grow-1">3</div>
+        </div>
+
+        <h3>Flex Grow</h3>
+        <!-- aqui vemos como podemos eles se comportam com as medidas 1, 2 e 3  -->
+        <div class="container">
+            <div class="item grow-1">1</div>
+            <div class="item grow-2">2</div>
+            <div class="item grow-3">3</div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Basic</h2>
+
+        <div class="container">
+            <div class="item grow-1 basic-0">Lorem basic</div>
+            <div class="item grow-1 basic-0">Lorem basic issues </div>
+            <div class="item grow-1 basic-0">Lorem basic issues acis ijuflfkld</div>
+        </div>
+
+       
+    </section>
+
+    <section>
+        <h2>Shrink</h2>
+
+        <div class="container shrink">
+            <div class="item grow-1 shrink-1">Lorem izip zips king lorem </div>
+            <div class="item grow-1 shrink-3">Lorem izip zips king lorem</div> 
+            <div class="item grow-1 shrink-2">Lorem izip zips king lorem</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Shrink</h2>
+        <!-- aqui vou colocar o wrap (quebra automática, e se retirar o grow, veja o comportamento) -->
+        <div class="container shrink wrap">
+            <div class="item shrink-0">0</div>
+            <div class="item shrink-0">2</div> 
+            <div class="item grow-1 shrink-0">3</div>
+        </div>
+    </section>
+</body>
+</html>

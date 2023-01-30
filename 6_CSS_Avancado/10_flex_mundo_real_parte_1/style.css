@@ -1,0 +1,13 @@
+.flex {
+    height: 600px;
+    width: 100%;
+    background-color: crimson;
+    display: flex; /* para os filhos funcionarem, na div pai tem que ter o display flex*/
+    justify-content: center; /*para alinhar  horizontalmente*/ 
+    align-items: center;  /*para alinhar verticalmente*/
+}
+
+.flex h2{
+    font-size: 60px;
+    color: aliceblue;
+}

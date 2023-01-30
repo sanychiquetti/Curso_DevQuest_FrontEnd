@@ -1,0 +1,65 @@
+/* aqui ele só vai ocupar o tamanho do texto ou conteúdo que tem dentro */
+.grow-0{
+    flex-grow: 0;
+}
+/* aqui ele vai fazer eles ocuparem todo o container respeitando o conteúdo dentro, se todos tiverem o mesmo tamhanho de conteúdo, eles serão na mesma medida e ocupando todo o container */
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    flex-grow: 2;
+}
+
+.grow-3{
+    flex-grow: 3;
+}
+
+/*se queremos forçar que mesmo tendo conteúdos diferentes dentro deles, mas eles mantenham o mesmo tamanho, usamos o basic */
+.basic-auto{
+    flex-basis: auto;
+}
+
+.basic-0{
+    flex-basis: 0;
+}
+
+/*aqui basicamente estamos aplicando uma medida mínima para o elemento*/
+.basic-100{
+    flex-basis: 100px;
+}
+
+.basic-200{
+    flex-basis: 200px;
+}
+
+.basic-300{
+    flex-basis: 300px;
+}
+
+/*O shrink é a habilidade de um item encolher, se for necessário dentro de um container, o padrão é 1 */
+.shrink-1{
+    flex-shrink: 1;
+}
+
+.shrink-2{
+    flex-shrink: 2;
+}
+/* se quero reduzir mais o conteúdo, posso colocar valores maiores, veja nos exemplos, que com o mesmo conteúdo, veja que o 3 reduz mais o conteúdo que o 1 e o 2...*/ 
+.shrink-3{
+    flex-shrink: 3;
+}
+
+/* se eu quiser dizer pro css que não quero mais que um item diminua de tamanho */
+.shrink-0{
+    flex-shrink: 0;
+}
+
+/* posso forçar uma largura, para todos os itens, que são os filhos, mas no html, posso colocar em apenas 1 elemento, os outros posso retirafr o shrink, para eles se adequarem no container: */
+/*.shrink .item{
+    width: 150px; esse tamanho vai ser levado em consideração para a quebra de linha
+}
+*/
+.wrap{
+    flex-wrap: wrap;
+}

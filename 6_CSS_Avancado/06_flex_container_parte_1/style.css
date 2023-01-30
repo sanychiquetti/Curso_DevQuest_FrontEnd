@@ -1,0 +1,35 @@
+/* Aqui estamos dando  a medida dos blocos e espaçamento entre eles */
+.container div {
+    background-color: aqua;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+} 
+
+/*Aqui vamos colocar em linha e pode ser da esquerd pra direita ou reverse, que seria da direita pra esquerda mas em linha  que é o row*/
+/* .container {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+/*Aqui vamos colocar em coluna e pode ser da esquerda pra direita ou reverse, que seria da direita pra esquerda mas em coluna  que é o column*/
+
+/*.container {
+    display: flex;
+    flex-direction: column;
+}*/
+
+/* Aqui veremos que ela vai quebrar a linha conforme o que coubr na tela*/
+/* .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+/* Aqui veremos que ele une os dois comandos direction e o wrap (direção e quebra de linha)*/
+
+.container {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}

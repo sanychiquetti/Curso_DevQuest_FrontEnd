@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <!-- forma antiga de carregar audios -->
+    <!-- <audio src="audios/audio.mp3" controls autoplay preLoad="none"></audio> -->
+
+    <!-- versão nova: -->
+    <audio controls> <source src="audios/audio.mp3" type="audio/mpeg">
+
+    <!-- versão para safari: -->
+    <audio controls> <source src="audios/audio.ogg" type="audio/ogg"></audio>
+    <audio controls> <source src="audios/audio.wav" type="audio/wav"></audio>
+    
+    <!-- Podemos deixar um aviso se o navegador do usuário não possuir suporte a tag audio -->
+    <p>Seu navegador não têm suporte a tag audio</p>
+</body>
+</html>FONTES

@@ -1,0 +1,67 @@
+
+/* Uma tag não precisa colocar nada na frente para ser estilizada, já as classes deve-se colocar um . na frente, e na id deve ser colocdo um # */
+h1 {
+    color: crimson;
+}
+
+/* Veja que mesmo no html estarmos com um p e um span com a classe paragrafo, ela será estilizada pelo nome da classe, não pela tag*/
+.paragrafo {
+    color: rgb(71, 177, 10);
+}
+
+#menu {
+    margin-left: 50%;
+    color: blueviolet;
+}
+
+/* Para estilizar todos os elementos da pagina usamos o (*) */
+*{
+    padding: 0;
+}
+
+.titulo {
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+}
+
+/* Para estilizar, o primeiro item da classe qdo tem classe dupla, veja que aqui, não tem espaço entre elas */
+.titulo.verde {
+    color: green;
+}
+
+/* Para estilizar, o segundo item da classe qdo tem classe dupla, veja que aqui, não tem espaço entre elas */
+.titulo.laranja {
+    color: orangered;
+}
+
+/* Aqui veremos que se colocarmos separados, eles tb tem comportamento diferente dentro do html, colocando uma classe dentro de outra classe, tipo pai e filho. */
+.pai .filha {
+    color: rgb(101, 168, 101);
+}
+
+/* Podemos estilizar vários seletores apenas separando por vírgulas. */
+aside, ol {
+    font-size: 30px;
+    color: brown;
+}
+
+/* Para estilizarmos todas os filhos que estão dentro da classe pai, que é a primeira que vamos selecionar*/
+h4 > p {
+    color: purple;
+    font-size: 25px;
+}
+
+/* Para estilizarmos o primeiro elemento que virão após a tag referênciada, usamos o sinal de + */
+div + p {
+    color: deeppink;
+}
+
+/* Outra forma de estilizar é pelo atributo do elemento, */
+a[target=_blank] {
+    color:crimson;
+}
+
+/*Poderia ser o atributo href */
+a[href="google.com"] {
+    color:rgb(28, 92, 9);
+}

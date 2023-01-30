@@ -1,0 +1,68 @@
+/* seletor::pseudo-elemento{
+    propriedade: valor;
+} */
+
+/* ele estiliza apenas a 1 letra */
+p::first-letter{
+    color:coral;
+}
+
+/*posso colocar em uma class */
+.paragrafo::first-letter{
+    color: rgb(152, 241, 50);
+}
+
+/* posso colocar em uma id */
+#paragrafo::first-letter{
+    color:rgb(160, 100, 206);
+}
+
+/* ele estiliza apenas a 1 linha */
+p::first-line{
+    color: blue;
+}
+/* ele estiliza os marcadores de uma lista */
+li::marker{
+    color:crimson;
+    font-size: 20px;
+}
+/* ele insere uma imagem ou texto antes do conteúdo do elemento */
+h2::before{
+    content:url(logo.jpg);
+    border: 2px solid black; /* aqui o border não funciona, usar com o background */
+}
+/* ele insere uma imagem ou texto antes do conteúdo do elemento */
+/* h3::before{
+    content: "Texto = ";
+    color:blueviolet;
+}*/
+/* o after é a mesma coisa, porém após o conteúdo do elemento*/
+h2::after{
+    content: " >Texto";
+    color:blue
+}
+/* outra forma de usar o before ou after:*/
+h3::before{
+    content: "";
+    background: url(logo.jpg) center center no-repeat;
+    display: inline-block; /*aqui precisa colocar o inline-block, se não não funciona */
+    width: 25px;
+    height: 19px;
+    border: 1px solid black;
+}
+h3::after{
+    content: "";
+    background: url(logo.jpg) center center no-repeat;
+    display: inline-block; /*aqui precisa colocar o inline-block, se não não funciona */
+    width: 25px;
+    height: 19px;
+    border: 1px solid black;
+}
+/* se eu quiser colocar um before e um after, apenas no primeiro texto e no ultimo texto
+fazendo como inicio e fim usamos uma classe no html*/
+.sonoinicio::before{
+    content:url(logo.jpg);
+}
+.sonofim::after{
+    content:url(logo.jpg);
+}

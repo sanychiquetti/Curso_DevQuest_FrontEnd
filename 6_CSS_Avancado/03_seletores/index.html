@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Seletores são padrões do CSS que usamos para selecionar qual elemento vamos estilizar</h1>
+
+    <h2>Estilização com classe</h2>
+
+    <p class="paragrafo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa obcaecati cupiditate laborum,
+        doloribus placeat ullam vitae distinctio quas enim quibusdam, repellendus praesentium qui ad magnam totam iusto?
+        Minima, accusamus suscipit.</p>
+
+    <span class="paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa amet praesentium asperiores nisi delectus
+        totam consequuntur, magnam facilis! Sit, blanditiis quaerat veritatis voluptatem facilis atque possimus
+        perspiciatis deleniti veniam.
+    </span>
+
+    <!-- As id não é aconselhável para esrilização, e sim para interação com javaScript, use classes para estilização! -->
+    <h2>Estilização com id</h2>
+
+    <nav id="menu">
+        <ul>
+            <li>Sobre </li>
+            <li>Contato</li>
+            <li>Projetos</li>
+        </ul>
+    </nav>
+
+    <!-- Quando a maioria das caracteristicas do nossos elementos serão iguais, usamos classe dupla, assim apenas a seunda classe que vamos colocar os valores para estilizar. -->
+    <h2>Estilização com duas classes</h2>
+
+    <h3 class="titulo verde">Titulo 1 com duas classes, elas tem dois nomes porém não colocar ponto ou - entre elas.
+    </h3>
+
+    <h3 class="titulo laranja">Titulo 2 com duas classes, elas tem dois nomes porém não colocar ponto ou - entre elas.
+    </h3>
+
+    <h2>Estilização com classe filha</h2>
+
+    <section class="pai">
+
+        <p class="filha">Aqui veremos o comportamento no css, qdo colocamos com separação na especificação. O que seria
+            uma hierarquia, um filho dentro de uma classe pai.</p>
+    </section>
+
+    <h2>Estilização com vírgula</h2>
+
+    <aside>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos minus temporibus error possimus!
+    </aside>
+    <ol>
+        <li>Podemos estilizar tags diferentes</li>
+        <li>Apenas usando vírgula no CSS</li>
+    </ol>
+
+    <h2>Estilizando com o seletor > (sinal de maior)</h2>
+
+    <h4>
+        <p>Nesse exemplo estamos selecionando todos os p que estão dentro do h4 </p>
+
+        <p>Obcaecati consequatur veritatis harum impedit sed temporibus qui numquam. Asperiores quisquam distinctio
+            reprehenderit ipsa at. Tenetur?</p>
+    </h4>
+
+    <h2>Estilizando com o seletor + (sinal de mais)</h2>
+
+    <div>Veja que o p (paragráfo) aqui está fora da tag div, ficando na mesma hierarquia da página, sendo irmãos.</div>
+
+    <p>Nesse exemplo estamos selecionando o p que está logo após a div </p>
+
+    <p>Veja que esse p está logo após, mas não será estilizado, pois só o primeiro elemento, nesse caso será estilizado</p>
+
+    <h2>Estilizando pelo atributo do elemento</h2>
+    <a href="/" target="_blank">Clique aqui</a>
+    <a href="google.com">Clique aqui</a>
+</body>
+
+</html>

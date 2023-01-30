@@ -1,0 +1,39 @@
+/* seletor:pseudo-classe {
+    propriedade: valor;
+ } */
+
+ /* dessa forma vamos estilizar apenas a 1* classe, não preciando criar uma classe ´la no html,
+  só para estilzar aquele primeiro praragrafo*/
+p:first-child{
+    color: #B0E0E6;
+} 
+
+/* aqui com o last-child ele vai estilizar a ultima classe. */ 
+p:last-child{
+    color: #DC143C;    
+}
+
+/*todas as classes que não estiverem dentro do parâmetro, será aplicado, a cor definida nesse parâmetro */
+ol:not(.padrao){
+    color: yellow;
+} */
+
+/*aqui vai selecionar elementos a partir da posição deles, em um grupo de elementos irmãos */
+/* o odd vão ser todos os elementos ímpares*/
+/* o even vão ser todos os elementos pares*/
+/* se colocar 4n ou o valor que desejar, dentro do parâmetro, ele vai aplicar a cor a cada intervalo desejado*/
+/* se colocar um valor sem o n, só o número, ele estiliza apenas aquele item*/
+/* se quisermos estilizar de um elemento até outro, uma sequencia específica, usamos assim: 
+nth-child(n+2):nth-child(-n+5) assim ele estiliza apenas do 2 ao 5. */
+/* li:nth-child(3n){
+    color: #FF69B4;
+} */
+
+/* aqui ele faz as mesmas funções do nth, mas de forma inversa */ 
+li:nth-last-child(1){
+    color: green;
+}
+
+p:only-child{
+    color: #4B0082;
+}
