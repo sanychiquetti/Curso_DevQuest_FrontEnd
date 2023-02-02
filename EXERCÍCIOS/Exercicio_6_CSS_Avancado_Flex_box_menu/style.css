@@ -3,6 +3,7 @@
     justify-content: space-between;
     font-family: 'Public Sans', sans-serif;
     align-items: center;
+    padding: 30px;
     flex-wrap: wrap;
     font-weight: 400;
     font-size: 15px;
@@ -11,23 +12,18 @@
 
 .logomenu {
     display: flex;
-    width: 45px;
-    height: 45px;
-    margin-top: 45px;
-    margin-left: 44.41px;
     align-items: center;
     text-transform: lowercase;
     font-weight: 800;
 }
 
 .menu{
-    display: flex;
     margin-block-start: auto;
 }
 
 .container ul{
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap;
 }
 
 .menu li{
