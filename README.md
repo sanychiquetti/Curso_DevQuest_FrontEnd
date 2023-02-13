@@ -7,3 +7,10 @@ Aqui estarei compartilhando meus projetos e exercícios.🗽
 - HTML
 - CSS
 - JS
+- REACT
+
+## Ferramenta:
+
+- Figma
+
+## Constam aqui também meus exercícios, para fixação de conteúdos.
