@@ -1,0 +1,31 @@
+/* essa configuração apenas para ficar mais visual os grid*/
+.container > div{
+    border: 1px solid black;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+}
+
+.container{
+    display: grid; /*apenas declarando display grid ainda não vai alterar nada, pois precismos estilizar nos filhos*/
+
+    /*display: inline-grid; com o display inline-grid, ela não ocupa toda a tela, mas apenas o tamanho do elemento maior fazendo todas ficar com o mesmo tamanho*/
+
+    /*grid-template-columns: auto auto 80px; aqui vamos defini o tamanho das colunas do grid, com o auto eu estou dizendo para que fique uma coluna, se colocar auto auto, estou dizendo para ficar 2 colunas, e assim por diante, ele proporciona para que todas fiquem com a mesma medida, podemos tb usar pixel, %  */
+
+    /*grid-template-rows: 30px 80px 150px; aqui defino o tamanho das linhas, para repetição, ou seja, colocar todas com a mesma medida: repeat(3, 50px), isso serve tb para as colunas */
+
+    /*podemos abreviar essas duas propriedades com o grip-template, o primeiro valor sendo a linha e segundo valor sendo a coluna, podemos usar o repeat tb */
+    grid-template: repeat(1,150px) / repeat(2, auto);
+
+    /*se eu quiser dar espaçamento só entre as colunas
+    grid-column-gap: 5px;*/
+
+    /* e se quiser dar espaçamento só nas linhas:
+    grid-row-gap: 15px ;*/
+    
+    /*O grid gap podemos abreviar essas duas propriedades, se colocar apenas 1 valor ele coloca espaço tanto para as colunas como pras linhas, se colocar 2 valores, o primeiro será entre linhas e segundo entre as colunas*/
+    grid-gap: 15px 5px;
+
+    /*outra propriedade é o min-max, qdo queremos definir um tamanho de linha ou coluna fixos, nos casos onde esse tamanho não p0ode ser fixo, pois depende do tamanho do conteúdo, mas precisamos limitar o tamanho em um intervalo, para não ficar algo muito grande e quebrar nosso layout, vide a pasta minmax*/
+}

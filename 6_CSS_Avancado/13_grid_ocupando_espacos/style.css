@@ -1,0 +1,90 @@
+.verde-claro{
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.azul{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
+.rosa{
+    background-color: hotpink;
+    border-radius: 5px;
+}
+
+.laranja-escuro{
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.verde-forte{
+    background-color: green;
+    border-radius: 5px;
+}
+
+.marrom{
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+/*aqui começamos a estilizar igual a imagem do grid */
+.container{
+    /*aqui definimos as propriedades do container*/
+    display: grid;
+    grid-template-columns: repeat(5, auto); /*aqui estamos criando as colunas*/
+    grid-template-rows: repeat(3, auto); /*aqui estamos definindo as linhas*/
+    grid-gap: 15px; /*espaçamento entre colunas e linhas*/
+}
+
+/*aqui vamos estilizar os itens*/
+
+.verde-claro{
+    /*para definirmos o início da coluna e o fim da coluna usamos o star e o end*/
+    /*grid-column-start: 1; aqui dizemos em qual coluna inicia*/
+    /*grid-column-end: 3; aqui dizemos até onde ele termina, mas ele não é inclusivo, então precisamos dizer em qual coluna ele deve parar, como quero duas colunas, para ele preencher a segunda coluna, preciso pedir para ele ir até a 3, pois a terceira ele não vai preencher*/
+
+    /*a forma abreviada de fazer essas duas propriedades, seria o grid-column com os dois parâmetros*/
+    /*grid-column: 1 / 3; posso usar tb o span (onde ele vai expandir o elemento):
+    grid-column: 1 / span 2; e teremos o mesmo resultado*/
+
+    /*aqui vamos colocar as linhas que queremos que eles abranjam
+    grid-row-start: 1; 
+    grid-row-end: 3;*/
+    /*forma abreviada:
+    grid-row: 1 / 3; */   
+
+    /*vamos usar o grid area, para fazer a mesma coisa*/
+    /*Ele vai ter 4 valores
+        grid-row-start (qual linha ele começa)
+        grid-column-star (qual coluna ele começa)
+        grid-row-end (qual linha ele acaba)
+        grid-column-end (qual coluna ele acaba)*/
+    grid-area: 1 / 1 / 3 / 3; /*lembre da inclusão, ele abranje a coluna e linha 2, então tem que ir até  o 3*/
+}
+
+.azul{
+    grid-area: 1 / 3 / 1 / 6 ;
+}
+
+.rosa{
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.laranja-escuro{
+    grid-area: 2 / 3 / 4 / 5;
+}
+
+.verde-forte{
+    grid-area: 2 / 5 / 2 / 6 ;
+}
+
+.marrom{
+    grid-area: 3 / 5 / 3 / 6;
+}
+
+/*abaixo um exemplo, se colocarmos uma propriedade começando na mesma coluna que a já existente:
+.span{
+        grid-column: 1 / span 2; o resultado é que veremos que ele vai quebrar, pois na coluna 1 já tem um elemento nela, então ele não pode ocupar o mesmo espaço, então ele quebra a coluna, e começa na linha de baixo para finar na coluna 1 
+    }*/
+    

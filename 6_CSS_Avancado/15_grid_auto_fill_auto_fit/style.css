@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    padding: 3em;
+    grid-gap: 2em;
+    /*Deixar responsivo sem o media queries*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*estou pedindo para que se ajuste a tela, e com tamanho minimo de 200px e maximo de 1 fração do tamanho, quebrando quando necessário*/ 
+    /*com o auto-fit ele estende as colunas até ocupar toda a tela,  se usarmos o auto-fill ele vai estender tb, mas não abrange toda a tela, ele vai parar nos 200px que definimos, e deixa espaço sobrando na tela se ela for maior*/
+}
+
+.container p{
+    padding: 2em;
+    border-radius: .3em;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+}
+
+
+/*Usando o media queries seriam assim:
+
+@media(min-width: 550px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 750px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width: 950px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+*/

@@ -1,0 +1,58 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho{
+    background-color: aquamarine;
+}
+
+.menu{
+    background-color: cornflowerblue;
+}
+
+.secao-principal{
+    background-color: hotpink;
+}
+
+.aside{
+    background-color: orangered;
+}
+
+.rodape{
+    background-color: green;
+}
+
+/*Como sempre estilizar primeiro a classe pai*/
+.container{
+    display: grid;
+    /*ele vai receber o nome das areas do html, mas primeiro tem que criar os nomes das sessões, veja nas filhas abaixo, para poder usar aqui no grid-template-areas (a forma abreviada seria apenas escrever grid)*/
+    grid: "cabecalho cabecalho cabecalho" 100px /*aqui definimos a primeira linha */
+    "menu secao-principal aside" 400px /*aqui definimos o meio, ou seja a segunda linha*/
+    "footer footer footer" 100px / 160px auto 160px; /*aqui definimos a ultima linha, e a altura da linha e depois do "/" a largura das colunas*/
+
+    /*se quisermos um espaço vazio usamos o . no lugar de um nome, ex: menu . aside*/
+}
+
+/*Aqui abaixo vamos dar nome a cada sessão do HTML, o nome podemos definir qualquer um que quisermos, para serem usadas acima*/
+.cabecalho{
+    grid-area: cabecalho; 
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.secao-principal{
+    grid-area: secao-principal;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.rodape{
+    grid-area: footer;
+}
+
