@@ -6,7 +6,7 @@
     flex-wrap: wrap; /*para que no elemento possamos definir onde quereemos a quebra na estilização da div*/
 }
 
-/*Parra responsividade tb: Deixar as imagens com 100% de largura da coluna que elas estarão dentro, mesmo assim ela ainda não fica todas na mesma medida, pois nem todas tem o mesmo conteúdo */
+/*Para responsividade tb: Deixar as imagens com 100% de largura da coluna que elas estarão dentro, mesmo assim ela ainda não fica todas na mesma medida, pois nem todas tem o mesmo conteúdo */
 .flex img{
     max-width: 100%;
 }

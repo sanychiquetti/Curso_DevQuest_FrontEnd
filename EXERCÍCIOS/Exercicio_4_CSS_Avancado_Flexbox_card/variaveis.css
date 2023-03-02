@@ -1,9 +1,0 @@
-:root{
-    --cor-fundo: hsl(185, 75%, 39%);
-    --cor-texto: hsl(227, 10%, 46%);
-    --cor-card:  hsl(255, 255%, 255%);
-}
-
-li{
-list-style-type: none;
-}
