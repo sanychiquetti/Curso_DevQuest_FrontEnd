@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@100;300;500&display=swap');
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: kumbh Sans sans-serif;
+    height: 100vh;
+    font-size: 16px;
+}
+
+hr{
+    width: 100%;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header{
+    background-color: var(--cor-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 330px;
+    height: 350px;
+}
+
+.header .img-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.header .img-perfil img{
+    width: 25%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.header .informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+    text-align: center; 
+}
+
+.informacoes .numeros, 
+.header .img-perfil p{
+    font-weight: 700;
+}
+
+span{
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+

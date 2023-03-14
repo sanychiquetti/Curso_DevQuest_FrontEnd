@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: var(--advice-card-color);
+    display: flex;
+    width: 450px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+.idconselho{
+    color: var(--advice-dice-color);
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.conselho{
+    color: var(--text-color);
+    font-size: 25px;
+    margin: 10% 0;
+}
+
+button .imgDado{
+    width: 40%;
+    display: flex;
+    text-align: center;
+}
+
+.btnNovoConselho{
+    background-color: var(--advice-dice-color);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; 
+}
+
+button:hover{
+    box-shadow: 0 0 15px var(--advice-dice-color);
+}
+
