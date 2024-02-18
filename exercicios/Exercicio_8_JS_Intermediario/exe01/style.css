@@ -1,0 +1,31 @@
+body{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.quadrado{
+   height: 150px;
+   width: 150px;
+}
+
+.azul{
+   background-color: blue;
+}
+
+.vermelho{
+   background-color: red;
+}
+
+.pink{
+   background-color: pink;
+}
+
+.botao{
+   width: 150px;
+   font-style:italic;
+   color: white;
+   background-color: gray;
+}
