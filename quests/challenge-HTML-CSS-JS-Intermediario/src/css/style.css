@@ -1,0 +1,95 @@
+body {
+   align-items: center;
+   background-color: #E5E5E5;
+   display: flex;
+   justify-content: center;
+   min-height: 100vh
+}
+
+.formulario {
+   align-items: center;
+   background-image: url(../fixture/bg-repeat.jpg);
+   background-repeat: repeat-x;
+   background-size: contain;
+   display: flex;
+   height: 402px;
+   justify-content: space-around;
+   width: 900px
+}
+
+.msg-informativa {
+   color: #FFFFFF;
+   height: 111px;
+   width: 300px
+}
+
+.msg-informativa h1 {
+   font-size: 20px;
+   line-height: 23.4px;
+   margin-bottom: 15px
+}
+
+.msg-informativa p {
+   font-size: 15px;
+   line-height: 17.58px
+}
+
+.formulario-campos {
+   align-items: center;
+   background-color: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+   height: 378px;
+   justify-content: space-around;
+   padding-bottom: 10px;
+   width: 340px
+}
+
+.formulario-campos .campos li {
+   margin-top: 15px
+}
+
+.formulario-campos .campos li .input.mensagem::placeholder {
+   color: #A8A8A8;
+   font-weight: 700;
+   padding-top: 10px;
+   position: absolute;
+   top: 0
+}
+
+.formulario-campos .alerta p {
+   font-size: 15px;
+   font-weight: 500;
+   height: 18px;
+   width: 250px
+}
+
+.formulario-campos button {
+   background-color: #3CCC87;
+   border: none;
+   border-radius: 5px;
+   color: #FFFFFF;
+   cursor: pointer;
+   height: 41.13px;
+   width: 298.00px
+}
+
+.formulario-campos button:hover {
+   background-color: rgb(0, 236, 122)
+}
+
+.formulario-campos .alerta {
+   width: 310px
+}
+
+.formulario-campos .campos .input {
+   border: 1px solid #000000;
+   border-radius: 5px;
+   height: 35.11px;
+   padding-left: 10px;
+   width: 298.01px
+}
+
+.formulario-campos .campos .input.mensagem {
+   height: 100px
+}
