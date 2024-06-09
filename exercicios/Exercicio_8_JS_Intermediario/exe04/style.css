@@ -1,0 +1,9 @@
+.quadrado{
+   height: 200px;
+   width: 200px;
+   background-color: black;
+}
+
+.novaCor{
+   border: 1px solid rgb(4, 98, 4);
+}
