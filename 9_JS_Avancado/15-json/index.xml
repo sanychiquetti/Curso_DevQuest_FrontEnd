@@ -1,0 +1,17 @@
+/*
+JSON é uma sigla para JavaScritp  Object Notation ou seja Notação de Objetos JavaScript
+Ele é um arquivo que contém uma série de dados estruturado em forma de texto, usado para trafegar dados entre aplicações. 
+*/
+<filmes>
+   <filme id="1">
+      <titulo>Vingadores</titulo>
+      <sinopse>Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes. Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.</sinopse>
+      <genero>Ação</genero>
+      <elenco>
+         <ator>Tom Hiddleton</ator>
+         <ator>Samuel L. Jackson</ator>
+         <ator>Chris Evans</ator>
+      </elenco>
+      <direcão>Joss Whedon</direcão>
+   </filme>
+</filmes>
